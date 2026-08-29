@@ -25,7 +25,7 @@ Leveraging an updated hardware and software workflow, the entire framework provi
 
 ## Viewer
 
-[Viewer](./python/viewer.y)
+[Viewer](./python/viewer.py)
 
 <img src="docs/me.png" width=300><img src="docs/scissors.png" width=300><img src="docs/handgrip.png" width=300>
 
