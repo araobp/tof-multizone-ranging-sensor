@@ -66,9 +66,7 @@ void loop() {
     byte frameBuffer[64];
 
     for (int i = 0; i < 64; i++) {
-      // Divide by 4 to correct 4x scaling anomaly from sensor raw output
-      int rawDistance = resultsData.distance_mm[i];
-      int distance = rawDistance / 4; 
+      int distance = resultsData.distance_mm[i];
       
       int status = resultsData.target_status[i];
       int outputDistance;
