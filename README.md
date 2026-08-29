@@ -23,9 +23,11 @@ Leveraging an updated hardware and software workflow, the entire framework provi
 [VL53L5X V2 EVB] --I2C (400kHz)--> [Arduino UNO R4 Minima Compatible] --USB Serial (115200bps)--> [Python GUI Viewer]
 ```
 
-## Applications
+## Viewer
 
-- [Hand Gesture Recognition](./HAND_GESTURE.md)
+[Viewer](./python/viewer.y)
+
+<img src="docs/me.png" width=300><img src="docs/scissors.png" width=300><img src="docs/handgrip.png" width=300>
 
 ## References
 
