@@ -2,6 +2,8 @@
 
 (Work in Progress)
 
+<img src="docs/eval_board.jpg" width=400>
+
 ## Project Background & Retrospective
 
 This project is a **sister project** to my previous implementation, [arduino-infrared-array-sensor](https://github.com/araobp/arduino-infrared-array-sensor), which focused on the thermal array sensor (AMG8833).
