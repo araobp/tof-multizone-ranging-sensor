@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bxydsb3ub7npf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7dm0k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ig7tw"]
+emission_enabled = true
+emission = Color(0.23921569, 0.33333334, 0.74509805, 1)
+
+[node name="Node3D" type="Node3D" unique_id=890101769]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1044705124]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.5261142)
+near = 0.001
+far = 5.0
+
+[node name="Sensor" type="MeshInstance3D" parent="." unique_id=770104424]
+transform = Transform3D(0.03, 0, 0, 0, 0.015, 0, 0, 0, 0.003, 0, 0, 0)
+mesh = SubResource("BoxMesh_7dm0k")
+surface_material_override/0 = SubResource("StandardMaterial3D_ig7tw")
