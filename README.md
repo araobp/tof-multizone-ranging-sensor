@@ -29,6 +29,10 @@ Leveraging an updated hardware and software workflow, the entire framework provi
 
 <img src="docs/me.png" width=300><img src="docs/scissors.png" width=300><img src="docs/handgrip.png" width=300>
 
+## Arduino Sheild
+
+- [Schematic](kicad/VL53L5CX_Arduino_Shield/VL53L5CX_Arduino_Shield.pdf)
+
 ## References
 
 - [VL53L5CX Documentation (STMicroelectronics)](https://www.st.com/en/imaging-and-photonics-solutions/vl53l5cx.html#documentation)
