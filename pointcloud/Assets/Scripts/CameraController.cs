@@ -1,5 +1,7 @@
 using UnityEngine;
+#if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
+#endif
 
 public class CameraController : MonoBehaviour
 {
@@ -17,6 +19,7 @@ public class CameraController : MonoBehaviour
         bool isRight = false;
         bool isLeft = false;
 
+#if ENABLE_INPUT_SYSTEM
         // 1. New Input System (Keyboard.current)
         var kb = Keyboard.current;
         if (kb != null)
@@ -26,31 +29,19 @@ public class CameraController : MonoBehaviour
             if (kb.rightArrowKey.isPressed || kb.dKey.isPressed) isRight = true;
             if (kb.leftArrowKey.isPressed || kb.aKey.isPressed) isLeft = true;
         }
+#endif
 
-        // 2. Legacy Input Manager (isolated per key to prevent exceptions from blocking input)
+#if ENABLE_LEGACY_INPUT_MANAGER
+        // 2. Legacy Input Manager (Only executed when Legacy Input is active in Player Settings)
         try
         {
             if (Input.GetKey(KeyCode.PageUp) || Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) isPgUp = true;
-        }
-        catch { }
-
-        try
-        {
             if (Input.GetKey(KeyCode.PageDown) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) isPgDn = true;
-        }
-        catch { }
-
-        try
-        {
             if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) isRight = true;
-        }
-        catch { }
-
-        try
-        {
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) isLeft = true;
         }
         catch { }
+#endif
 
         // Move Forward (PgUp / UpArrow / W)
         if (isPgUp)
