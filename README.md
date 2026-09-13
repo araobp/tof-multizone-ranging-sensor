@@ -25,7 +25,7 @@ Leveraging an updated hardware and software workflow, the entire framework provi
 
 ## Viewer
 
-* [Viewer (Python matplotlib)](./python/viewer.py)
+* [2D Viewer (Python matplotlib)](./python/viewer.py)
 * [3D Viewer (Unity)](./pointcloud)
 
 <img src="docs/me.png" width=300><img src="docs/scissors.png" width=300><img src="docs/handgrip.png" width=300>
