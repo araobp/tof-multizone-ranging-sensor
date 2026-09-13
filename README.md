@@ -33,7 +33,7 @@ Leveraging an updated hardware and software workflow, the entire framework provi
 
 ## Arduino Sheild
 
-- [Schematic](kicad/VL53L5CX_Arduino_Shield/VL53L5CX_Arduino_Shield.pdf)
+- [Schematic (VL53L5CX with AMG8833)](kicad/VL53L5CX_Arduino_Shield/VL53L5CX_Arduino_Shield.pdf)
 
 ## References
 
