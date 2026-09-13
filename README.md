@@ -20,8 +20,8 @@ Leveraging an updated hardware and software workflow, the entire framework provi
 ## System Architecture
 
 ```
-[VL53L5X V2 EVB] --I2C (400kHz)--> [Arduino UNO R4 Minima Compatible] --USB Serial (115200bps)--> [Python/matplotlib-based 2D Viewer]
-                                                                                              --> [Unity-based 3D Viewer            ]
+[VL53L5X V2 EVB] --I2C (400kHz)--> [Arduino UNO R4 Minima] --USB Serial (115200bps)--> [Python/matplotlib-based 2D Viewer]
+                                                                                   --> [Unity-based 3D Viewer            ]
 
 ```
 
